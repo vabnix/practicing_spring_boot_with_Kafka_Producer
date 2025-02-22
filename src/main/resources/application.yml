@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: kafka-producer
+  output:
+    ansi:
+      enabled: always
+  kafka:
+    producer:
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: 8080
